@@ -23,6 +23,12 @@ public class ScanAndPayRestApiApplication {
 			p.setProductId("123");
 			p.setPrice(10.50);
 			repository.save(p);
+			
+			Product p2 = new Product();
+			p2.setName("p2");
+			p2.setProductId("8901");
+			p2.setPrice(30.33);
+			repository.save(p2);
 		};
 	}
 }
